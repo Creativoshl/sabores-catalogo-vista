@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from 'react';
 import Header from '@/components/Header';
 import ProductGrid from '@/components/ProductGrid';
@@ -123,7 +122,7 @@ const Index = () => {
         
         <div ref={printRef} className="print:p-4 print-container">
           <div className="print:mb-6 print:block hidden">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-8 border-b border-gray-200 pb-4">
               <div>
                 <h1 className="text-2xl font-bold text-sabores-primary">Sabores del Valle</h1>
                 <p className="text-gray-600">Catálogo de Productos</p>

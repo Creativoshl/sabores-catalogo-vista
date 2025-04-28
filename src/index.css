@@ -101,15 +101,18 @@
   }
 }
 
-/* Estilos personalizados */
+/* Estilos de impresión */
 @media print {
   .print-landscape {
     width: 100% !important;
     height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   @page {
     size: landscape;
+    margin: 20mm;
   }
 
   body * {
@@ -135,7 +138,22 @@
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
+  }
+
+  .grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem !important;
+    page-break-inside: avoid !important;
+  }
+
+  .card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  img {
+    max-height: 120px !important;
+    object-fit: cover !important;
   }
 }
-
