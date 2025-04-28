@@ -121,7 +121,7 @@ const Index = () => {
           </TabsList>
         </Tabs>
         
-        <div ref={printRef} className="print:p-4">
+        <div ref={printRef} className="print:p-4 print-container">
           <div className="print:mb-6 print:block hidden">
             <div className="flex justify-between items-center">
               <div>
@@ -151,7 +151,7 @@ const Index = () => {
         </div>
       </main>
       
-      <footer className="py-4 px-8 bg-sabores-background border-t border-sabores-secondary/20 text-center text-sm text-gray-600">
+      <footer className="py-4 px-8 bg-sabores-background border-t border-sabores-secondary/20 text-center text-sm text-gray-600 print:hidden">
         <p>© {new Date().getFullYear()} Sabores del Valle. Todos los derechos reservados.</p>
       </footer>
       

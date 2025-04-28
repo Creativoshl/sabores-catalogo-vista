@@ -126,7 +126,7 @@
   
   [ref="printRef"],
   [ref="printRef"] * {
-    visibility: visible;
+    visibility: visible !important;
   }
   
   [ref="printRef"] {
@@ -138,3 +138,4 @@
     padding: 20px;
   }
 }
+
