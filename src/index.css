@@ -112,7 +112,7 @@
 
   @page {
     size: landscape;
-    margin: 20mm;
+    margin: 15mm;
   }
 
   body * {
@@ -130,6 +130,7 @@
   [ref="printRef"],
   [ref="printRef"] * {
     visibility: visible !important;
+    display: block !important;
   }
   
   [ref="printRef"] {
@@ -150,10 +151,27 @@
   .card {
     break-inside: avoid !important;
     page-break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   img {
     max-height: 120px !important;
     object-fit: cover !important;
+    display: block !important;
+  }
+  
+  .print-container {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .print-container * {
+    visibility: visible !important;
+  }
+  
+  /* Force display for card components */
+  .card-content, .card-footer {
+    display: block !important;
   }
 }

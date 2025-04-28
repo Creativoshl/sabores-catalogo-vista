@@ -29,7 +29,8 @@ const Index = () => {
     onAfterPrint: () => {
       document.body.classList.remove('print-landscape');
       setIsPrintModalOpen(false);
-    }
+    },
+    removeAfterPrint: true
   });
 
   // Filter products based on selected category
@@ -120,7 +121,7 @@ const Index = () => {
           </TabsList>
         </Tabs>
         
-        <div ref={printRef} className="print:p-4 print-container">
+        <div className="print-container" ref={printRef}>
           <div className="print:mb-6 print:block hidden">
             <div className="flex justify-between items-center mb-8 border-b border-gray-200 pb-4">
               <div>
